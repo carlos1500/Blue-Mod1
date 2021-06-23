@@ -101,11 +101,11 @@ for i in pessoas:
         idade_acimam.append(i)
 
 
-print(pessoas)
-print(total)
-print(media)
-print(mulheres)
-print(idade_acimam)
+print(f"cadastros: \n {pessoas}")
+print(f"foram cadastrados um total de {total} pessoas")
+print(f"A média da idade das pessoas cadastradas foi: {media} anos")
+print(f"As mulheres cadastradas foram: {mulheres}")
+print(f"As pessoas com idades acima da média foram: {idade_acimam}")
 
 
     
