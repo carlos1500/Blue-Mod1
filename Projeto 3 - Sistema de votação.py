@@ -11,7 +11,7 @@ def autoriza_voto(nasc):
 
 def votacao(autoriza, voto):
     if autoriza == "negado":
-        print(f"Desculpe, usuário não autorizado a votar. O usuário inserido tem menos de 16 anos de idade, e o voto é permitido em modalidade opcional a partir dos 16 anos. Mas não desanime, a democracia precisa do seu entuasiamo, retorne quando tiver pelo menos 16 anos.")
+        print(f"Desculpe, usuário não autorizado a votar. O usuário inserido tem menos de 16 anos de idade, e o voto é permitido em modalidade opcional a partir dos 16 anos. Mas não desanime, a democracia precisa do seu entuasiamo, retorne quando tiver pelo menos 16 anos.\n")
     else:
         return voto   
  
@@ -29,23 +29,32 @@ while True:
             eleição = votacao(Entrada, voto)
             votos = total_votos.append(eleição)
 
-print(total_votos)
-
-candidatos = [{"lula molusco": 0}, {"bob esponja": 0}, {"sirigueijo": 0}, {"voto nulo": 0}, {"voto branco": 0}]
+candidatos = {"lula molusco": 0, "bob esponja": 0, "sirigueijo": 0, "voto nulo": 0, "voto branco": 0}
 
 for i in total_votos:    
     if i == 1:
-        candidatos[0] ["lula molusco"] += 1
+        candidatos ["lula molusco"] += 1
     elif i  == 2:
-        candidatos[1] ["bob esponja"] += 1
+        candidatos ["bob esponja"] += 1
     elif i == 3:
-        candidatos[2] ["sirigueijo"] += 1
+        candidatos ["sirigueijo"] += 1
     elif i == 4:
-        candidatos[3] ["voto nulo"] += 1
+        candidatos ["voto nulo"] += 1
     elif i == 5:
-        candidatos[4] ["voto branco"] += 1
+        candidatos ["voto branco"] += 1
 
-print(f"O total de votos foi: \n{candidatos[0]}\n{candidatos[1]}\n{candidatos[2]}\n{candidatos[3]}\n{candidatos[4]}")
+print(candidatos)
+
+candidatos = {value:key for key, value in candidatos.items()}
+vencedor = (max(candidatos.keys()))
+
+print()
+print("O vencedor da eleição de Imperador Supremo da Vila Fenda do Biquini é: ")
+print(candidatos[vencedor])
+
+print("Parabéns! A festa de coroação ocorrerá no Siricascudo")
+
+
     
     
 
