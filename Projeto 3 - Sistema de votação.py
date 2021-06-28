@@ -24,12 +24,12 @@ while True:
             break
         else:
             Entrada = autoriza_voto(int(input(f"Por favor. Digite o ano de seu nascimento: \n")))
-            voto = int(input(f"Os candadatos à eleição são:\n1 - Lula Molusco\n2 - Bob Esponja\n3 - Sirigueijo\n4 - Voto Branco\n5 - Voto Nulo. \nPor favor. Digite o número referente ao seu candidato: "))
+            voto = int(input(f"Os candadatos à eleição são:\n1 - Lula Molusco \U0001F419\n2 - Bob Esponja \U0001F9FD\n3 - Sirigueijo \U0001F980\n4 - Voto Branco \U0001F3F3\n5 - Voto Nulo. \U0001F6AB\nPor favor. Digite o número referente ao seu candidato: "))
 
             eleição = votacao(Entrada, voto)
             votos = total_votos.append(eleição)
 
-candidatos = {"lula molusco": 0, "bob esponja": 0, "sirigueijo": 0, "voto nulo": 0, "voto branco": 0}
+candidatos = {"lula molusco \U0001F419": 0, "bob esponja \U0001F9FD": 0, "sirigueijo \U0001F980": 0, "voto branco \U0001F3F3": 0, "voto nulo \U0001F6AB": 0}
 
 for i in total_votos:    
     if i == 1:
@@ -39,9 +39,9 @@ for i in total_votos:
     elif i == 3:
         candidatos ["sirigueijo"] += 1
     elif i == 4:
-        candidatos ["voto nulo"] += 1
-    elif i == 5:
         candidatos ["voto branco"] += 1
+    elif i == 5:
+        candidatos ["voto nulo"] += 1
 
 print(candidatos)
 
