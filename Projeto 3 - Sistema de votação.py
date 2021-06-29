@@ -29,19 +29,19 @@ while True:
             eleição = votacao(Entrada, voto)
             votos = total_votos.append(eleição)
 
-candidatos = {"lula molusco \U0001F419": 0, "bob esponja \U0001F9FD": 0, "sirigueijo \U0001F980": 0, "voto branco \U0001F3F3": 0, "voto nulo \U0001F6AB": 0}
+candidatos = {f"lula molusco \U0001F419": 0, "bob esponja \U0001F9FD": 0, "sirigueijo \U0001F980": 0, "voto branco \U0001F3F3": 0, "voto nulo \U0001F6AB": 0}
 
 for i in total_votos:    
     if i == 1:
-        candidatos ["lula molusco"] += 1
+        candidatos [f"lula molusco \U0001F419"] += 1
     elif i  == 2:
-        candidatos ["bob esponja"] += 1
+        candidatos [f"bob esponja \U0001F9FD"] += 1
     elif i == 3:
-        candidatos ["sirigueijo"] += 1
+        candidatos [f"sirigueijo \U0001F980"] += 1
     elif i == 4:
-        candidatos ["voto branco"] += 1
+        candidatos [f"voto branco \U0001F3F3"] += 1
     elif i == 5:
-        candidatos ["voto nulo"] += 1
+        candidatos [f"voto nulo \U0001F6AB": 0] += 1
 
 print(candidatos)
 
