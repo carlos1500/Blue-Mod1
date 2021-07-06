@@ -12,3 +12,5 @@ salario1 = float(input("Salario: "))
 horas1 = float(input("Horas trabalhadas: "))
 calculadosalário(horas1, salario1)
 
+
+
