@@ -1,0 +1,24 @@
+
+nav{ background-color: whitesmoke;
+padding: 3rem;}
+body{ background-color: whitesmoke;}
+
+body section#intro p {
+    color: rgb(0, 0, 0);
+    text-decoration: bold;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+body section div#imagem {
+    display: flex;
+    justify-content: center;
+}
+
+body section#botão{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: whitesmoke;
+}
