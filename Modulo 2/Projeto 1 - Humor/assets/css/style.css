@@ -24,8 +24,10 @@ header {
     align-items: center;
 }
 
-body header h1{ padding: 4rem;
-font-style: oblique;}
+body header h1{ 
+    font-size: 30px;
+    padding: 4rem;
+    text-transform: uppercase;}
 
 body section#intro h2 {
     padding: 3rem;
