@@ -45,17 +45,17 @@ class Jogo:
             print()
             print(f"{'LISTA DE TAREFAS':^23}")    
             print()
-            print("1 - Buscar alimentos \U0001F357")
-            print("2 - Buscar equipamentos \U0001F6E0")
+            print("1 - Buscar alimentos")
+            print("2 - Buscar equipamentos")
             print()
             try:
                 resposta = int(input())
                 if resposta == 1 or resposta == 2:
                     return resposta
                 else:
-                    print('\nOpção invalida. Tente novamente: \U0001F534\n')
+                    print('\nOpção invalida. Tente novamente: \n')
             except:
-                print('\nOpção invalida. Tente novamente: \U0001F534\n')
+                print('\nOpção invalida. Tente novamente: \n')
 
 
     #Função de monitoramento dos parametros de finalização do jogo. Alimento + Ferramentas + tempo

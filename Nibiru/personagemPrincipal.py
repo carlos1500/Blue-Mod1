@@ -282,6 +282,11 @@ class PersonagemPrincipal(Personagem):
         tempoRestante = 3 - self.tempo.getDia()
         print(f"Hoje é dia: {self.tempo.getDia()}, você tem apenas mais {tempoRestante} para finalizar suas tarefas!")
         print()
+<<<<<<< HEAD
         print(f"Agora são: {self.tempo.getHora()} horas. \U0001F570")
         print(f"Sua stamina é: {self.stamina} \U0001F525")
+=======
+        print(f"Agora são: {self.tempo.getHora()} horas.")
+        print(f"Sua stamina é: {self.stamina}")
+>>>>>>> e74aab5680631fa8ebde125220070942fe1b9395
         print()

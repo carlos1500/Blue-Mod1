@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto slab', sans-serif, Arial;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+nav {background-color: rgb(38, 70, 83)}
+body{background-color: rgb(42, 157, 143);}
+
+body nav ul li a{
+    padding: 2rem;
+    font-size: 18px;
+}
+
+body nav ul#menu {
+    text-decoration: none;
+    list-style: none;
+    color: floralwhite;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(42, 157, 143);}
+
+    body nav ul#menu li {
+        padding: 1.5rem;
+    }
+
+    
+body section#series{
+    padding: 5rem;
+    background-color: rgb(233, 196, 106);
+}
+body section#series p{
+    font-style: bold;
+    font-size: 20px;
+    padding: 1rem;
+    color: black;
+}
+body section#series div{
+    display: flex;
+}
+body section#series div img{
+    display: block;
+   margin: auto;
+    width: 30%;
+padding: .5rem}
+
+body section#livros{
+    padding:2rem;
+    background-color: rgb(244, 162, 97);
+}
+
+body section#livros p{
+    font-style: bold;
+    padding:1rem;
+    background-color: black(244, 162, 97);
+    font-size: 20px;
+}
+
+body section#livros div{display: flex
+}
+
+body section#livros div img{
+    display: block;
+   margin: auto;
+    width: 20%;
+    padding: 3rem;
+}
+
+body section#musica {
+    padding: 2rem;
+    background-color: rgb(38, 70, 83);
+}
+body section#musica p {
+    font-style: bold;
+    font-size: 20px;
+    padding: 1rem;
+    color: black
+}
+
+
+body section#musica div{display: flex
+}
+
+body section#musica div iframe{
+    display: block;
+   margin: auto;
+width: 100%;
+padding: .5rem;}
