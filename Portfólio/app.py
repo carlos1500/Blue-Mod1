@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request 
 from flask_mail import Mail, Message 
 
 
@@ -17,13 +17,13 @@ app.config.update(mail_settings)
 mail = Mail(app) 
 
 
-class Contato:
+class Contato: #classe que constrói os atributos do form
    def __init__ (self, nome, email, mensagem):
       self.nome = nome
       self.email = email
       self.mensagem = mensagem
 
-@app.route('/')
+@app.route('/') #rota da página principal
 def index():
    return render_template('index.html')
 
@@ -44,6 +44,7 @@ def send():
          
                {formContato.mensagem}''' 
          )
+      
       mail.send(msg) 
    return render_template('send.html', formContato=formContato) 
 
