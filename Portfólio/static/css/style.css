@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Lora', serif;}
+
+html{
+   scroll-behavior: smooth;
+}
+
+nav{
+   background-image: url(../img/back-pattern40op.png);
+   background-color: rgb(102, 7, 8);
+   font-weight: 700;
+   font-size: larger;
+   position: fixed;
+   width: 100%;
+   border-radius: 50;
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li{
+   padding: 1rem;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+}
+
+header div#img-rocket {
+   display: flex;
+   justify-content: center;
+
+}
+
+header div p{
+   font-size: 2vw;
+   font-weight: 700;
+   color: rgb(102, 7, 8);
+   margin-left: 4rem;
+}
+
+header#inicio div span{
+   padding-top: 1rem;
+   font-size: 1.2vw;
+   font-weight: 500;
+   display: flex;
+   color: rgb(164, 22, 26);
+   margin-left: 4rem;
+}
+
+header div#img-rocket img{
+   width: 50%;
+}
+
+section#sobre-mim{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+   background-color: rgb(102, 7, 8);
+}
+
+
+section#sobre-mim div#minha-foto img{
+   width: 60%;
+   border-radius: 50%;
+   margin-right: 3.5rem;
+   margin-left: 4rem;
+
+}
+
+section#sobre-mim div p#p1{
+   font-size: 1.1vw;
+   text-align: justify;
+   color: #fff;
+   line-height: 2.5rem;
+   padding: 2rem;
+   margin-right: 3rem}
+
+section#projetos{
+   display: flex;
+   transition: ease-in;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;}
+
+
+section#projetos div#projeto-1{
+   line-height: 2vw;
+
+   width: 100%;
+   padding: 3rem;
+   margin-left: 45rem;
+   margin-right: 10rem;
+   text-align: justify;}
+
+   section#projetos div#projeto-1 img{
+      padding: 1rem;
+      display: block;
+      margin: auto;
+      width:60%;
+   }
+
+section#projetos div#projeto-2{
+   line-height: 2vw;
+   width: 100%;
+   padding: 3rem;
+   margin-right: 45rem;
+   margin-left: 10rem;
+   text-align: justify;}
+
+   section#projetos div#projeto-2 img{
+      padding: 1rem;
+      display: block;
+      margin: auto;
+      width:75%;
+   }
+
+section#projetos div#projeto-3{
+   line-height: 2vw;
+
+   width: 100%;
+   padding: 3rem;
+   margin-left: 45rem;
+   margin-right: 10rem;
+   text-align: justify;}
+
+   section#projetos div#projeto-3 img{
+      padding: 1rem;
+      display: block;
+      margin: auto;
+      width:50%;
+   }
+
+section#projetos div#projeto-4{
+   line-height: 2vw;
+
+   width: 100%;
+   padding: 3rem;
+   margin-right: 45rem;
+   margin-left: 10rem;
+   text-align: justify;}
+
+   section#projetos div#projeto-4 img{
+      padding: 1rem;
+      display: block;
+      margin: auto;
+      width:75%;}
+
+section#projetos h2, h2#p1{
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
+   color: rgb(102, 7, 8);
+}
+
+
+section#projetos p{
+  font-weight: 500;}
+
+section#projetos div button{
+   border: 1.5px outset rgb(102, 7, 8);
+   text-decoration: none;
+   background-color: floralwhite;
+   color: rgb(102, 7, 8);
+   padding: 0.5rem;
+   font-size: 1vw;
+   font-weight: 500;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   margin-top: 2rem;
+   cursor: pointer;
+   transition: .6s ease-out;
+}
+
+section#projetos div button:hover{
+   background-color: rgb(102, 7, 8);
+   color: #fff;
+   transform: scale(1.2);
+}
+
+section#habilidades{
+   padding: 3rem 10rem 3rem 10rem;
+   background-color:  #ffd7d7;
+}
+
+section#habilidades h2{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+section#habilidades p{
+   padding: 1rem;
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+section#habilidades div{
+   display: flex;
+   border: 1px solid rgb(164, 22, 26);
+   border-radius: 1rem;
+}
+
+section#habilidades div span#python{
+   background-color: rgb(164, 22, 26);
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 50%;
+}
+
+section#habilidades div span#html{
+   background-color: rgb(164, 22, 26);
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 70%;
+}
+
+section#habilidades div span#css{
+   background-color: rgb(164, 22, 26);
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 30%;
+}
+
+section#habilidades div span#wordpress{
+   background-color: rgb(164, 22, 26);
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 70%;}
+
+section#contato {
+   padding: 3rem 10rem 3rem 10rem; 
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; 
+}
+
+section#contato div#redes{
+   width: 100%;}
+
+section#contato div#redes h3{
+   text-align: center; 
+   font-size: 2.0rem; 
+   margin-top: 2rem;
+   margin-bottom: 1rem; 
+}
+
+section#contato div#redes div#icons{
+   display: flex;
+   justify-content: center;
+}
+
+section#contato div#redes div#icons a{
+   text-decoration: none; 
+   color: rgb(164, 22, 26);
+   font-size: 3rem;
+   padding: 2rem;
+   transition: all .4s ease-out; 
+}
+
+section#contato div#redes div#icons a:hover{
+   color: rgb(211, 96, 100);
+}
+
+section#contato div#redes div#icons a i{
+   transition: all .4s ease-out;
+}
+
+section#contato div#redes div#icons a i:hover{
+   transform: scale(1.2);
+}
+
+section#contato div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+section#contato div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+section#contato div#form form{
+   width: 50%;
+}
+
+section#contato div#form form input, textarea{
+   width: 100%;
+   padding: .5rem;
+   font-size: 1.2rem;
+   border: 1px solid #ccc;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   outline: none; 
+}
+
+section#contato div#form form label{
+   font-size: 1.2rem;
+}
+
+section#contato div#form form button{
+   border: 1px solid rgb(164, 22, 26);
+   background-color: #fff;
+   color: rgb(164, 22, 26);
+   padding: .8rem;
+   font-size: .8vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 20%;
+}
+
+section#contato div#form form button:hover{
+   background-color: rgb(164, 22, 26);
+   color: #fff;
+   transform: scale(1.2);
+}
+
+body footer {
+   background-image: url('../img/back-pattern40op.png');
+   background-color: rgb(102, 7, 8);
+   background-size: cover;
+   height: 40px;
+   width: 100%;
+   background-repeat: repeat-x;
+   background-position: center;
+
+   font-size: 20px;
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+/* Página Send */
+
+section#success{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   background-color: rgb(235, 255, 235);
+ }
+ 
+ section#success div#card{
+   background-color: rgb(166, 218, 166);
+   text-align: center;
+   padding: 4rem;
+   border-radius: 2rem;
+   color: rgb(0, 88, 0);
+   width: 40%;
+ }
+ 
+ section#success div#card h1{
+   margin: 2rem 0rem;
+ }
+ 
+ section#success div#card i{
+   font-size: 5rem;
+ }
+ 
+ section#success div#card h3{
+   margin-bottom: 2rem;
+ }
+ 
+ section#success div#card p{
+   margin-bottom: 3rem;
+   width: 100%;
+   word-break: break-word;
+ }
+ 
+ section#success div#card a{
+   text-decoration: none;
+   padding: 1rem;
+   border: 1px solid rgb(0, 88, 0);
+   color:rgb(0, 88, 0);
+   border-radius: .4rem;
+   transition: all .4s ease-out;
+ }
+ 
+ section#success div#card a:hover{
+   background-color: rgb(0, 88, 0);
+   color: #fff;
+ }
