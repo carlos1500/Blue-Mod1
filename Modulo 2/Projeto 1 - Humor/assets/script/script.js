@@ -17,12 +17,12 @@ elementoBotao.addEventListener('click', () => {
     }
     else if (elementoBotao.value == 'terceiro') {
         elementoImagem.src = './assets/img/indignada.png'
-        elementoIntro.innerText = 'O seu humor é: Gretechen indignada!\n Você não aceita desaforo e está sempre pronta para defender o que acredita\n Está ouvindo esse som? É o tabu sendo quebrado!'
+        elementoIntro.innerText = 'O seu humor é: Gretchen indignada!\n Você não aceita desaforo e está sempre pronta para defender o que acredita\n Está ouvindo esse som? É o tabu sendo quebrado!'
         elementoBotao.value = 'quarto'
     }
     else if (elementoBotao.value == 'quarto'){
         elementoImagem.src = './assets/img/grata.jpg'
-        elementoIntro.innerText = 'O seu humor é: Gretchen Gratiluz!\nVocê é muito grata pela natureza, os animaizinho e as flores\n Cotinue com a essa vibe boa, mas atenção, nem tudo quen é natural faz bem\nCuidado com as ervas, garota!'
+        elementoIntro.innerText = 'O seu humor é: Gretchen Gratiluz!\nVocê é muito grata pela natureza, os animaizinho e as flores\n Cotinue com a essa vibe boa, mas atenção! Nem tudo quen é natural faz bem\nCuidado com as ervas, garota!'
         elementoBotao.value = 'quinto'
     }
 

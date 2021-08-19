@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 * { margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -9,6 +11,7 @@ html, body{
     width: 100%;
     height: 100%;
     background-color: #f8c1f1;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -18,32 +21,37 @@ header {
     background-size: cover; 
     background-position: center; 
 
-    height: 300px;
+    height: 260px;
     width: 100%;
     display: flex;
     align-items: center;
+
+    font-family: 'Bona Nova', serif;
+font-family: 'Playfair Display', serif;
 }
 
 body header h1{ 
     font-size: 30px;
     padding: 4rem;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem #ffffff80}
 
 body section#intro h2 {
-    padding: 3rem;
+    padding: 3rem 0;
     color: rgb(0, 0, 0);
-    text-decoration: bold;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: large;
     width: 100%
 }
 
 body section#intro p#texto{
     flex-wrap: wrap;
-    margin: 2.5rem 2.5rem 1rem 2.5rem ;
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
+    align-content: center;
     width: 100%;}
     
 
@@ -57,12 +65,20 @@ body section#botão{
     justify-content: center;}
 
 body section#botão button{
+    color: #94147f;
     padding: .5rem;
     font-size: 1rem;
     font-weight: 300;
-    background-color: #7e1b6d;
-    border: 2px solid #7e1b6d;
+    background-color: #fab7ef;
+    border: 2px solid #94147f;
     border-radius: 2rem;
     transition: all .5s ease-out;
     cursor: pointer;    
+}
+
+body section#botão button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px #ffffff50;
+    background-color: #94147f;
+    color: floralwhite;
 }
