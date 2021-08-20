@@ -9,7 +9,6 @@ const filmes = [
   "Donnie Darko",
   "Bonequinha de Luxo",
   "Dançando no Escuro",
-  "Bruna Surfistinha",
 ];
 
 app.get("/", (req, res) => {
@@ -48,7 +47,8 @@ app.delete("/filmes/:id", (req, res) => {
   const id = req.params.id - 1;
   const filme = filmes[id]; 
   if (filme) {
-    delete filmes[id];
+    filmes.splice(id,1)
+    //delete filmes[id];
     res.send(`filme excluído com sucesso`);
   } else res.send("Filme não localizado");
 });
