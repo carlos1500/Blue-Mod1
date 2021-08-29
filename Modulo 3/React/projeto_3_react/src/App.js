@@ -95,6 +95,8 @@ export default function App() {
     setBandas(bandas.filter((banda, setId) => setId !== indice));
   };
 
+
+
   return (
     <div>
       <header>
