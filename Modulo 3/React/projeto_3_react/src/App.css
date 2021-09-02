@@ -53,6 +53,26 @@ div h{
   text-align: center;
 }
 
+button#toggle {
+  background-color: rgb(194, 128, 255);
+  color: rgb(47, 255, 141);
+  padding: .5rem;
+  font-size: 18px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+  align-items: center;
+
+}
+
+button#toggle:hover {
+  background-color: rgb(47, 255, 141);
+  color: rgb(194, 128, 255);
+  font-weight: 600;
+  transition: ease-in .5s;
+  transform: scale(1.2);
+  transition: .6s ease-out;
+}
+
 div form{
   display: flex;
   justify-content: center;
@@ -76,7 +96,9 @@ div form input {
 }
 
 div form button{
-  background-color: white;
+  background-color: rgb(194, 128, 255);
+  color: rgb(47, 255, 141);
+  font-size: 18px ;
   padding: .3rem;
   margin: 1rem;
   font-family: 'Libre Baskerville', serif;
@@ -84,8 +106,11 @@ div form button{
 
 div form button:hover{
   background-color: rgb(47, 255, 141);
-  color: rgb(240, 240, 240);
+  color: rgb(194, 128, 255);
   transition: ease-in .5s;
+  transform: scale(1.2);
+  transition: .6s ease-out;
+  font-weight: 600;
 }
 
 div header {
@@ -111,8 +136,9 @@ div ul li{
   padding: 2rem;
   list-style: none;
   text-align: center;
-  color: floralwhite;
   margin-top: 10rem;
+  color: rgb(47, 255, 141);
+
 }
 
 div ul li:hover {
@@ -122,7 +148,9 @@ div ul li:hover {
 }
 
 div ul button#delete{
-    background-color: white;
+    background-color: rgb(194, 128, 255);
+    color: white;
+    font-size: 16px;
     padding: .3rem;
     margin: 1rem;
     font-family: 'Libre Baskerville', serif;
@@ -135,15 +163,18 @@ div ul button#delete{
   }
 
   div ul button#edit{
-    background-color: white;
+    background-color: rgb(194, 128, 255);
+    color: white;
+    font-size: 16px;
+
     padding: .3rem;
     margin: 1rem;
     font-family: 'Libre Baskerville', serif;
   }
   
   div ul button#edit:hover{
-    background-color: rgb(0, 141, 196);
-    color: rgb(241, 241, 241);
+    background-color: rgb(47, 255, 141);
+    color: rgb(19, 17, 17);
     transition: ease-in .5s;
   }
 
@@ -165,7 +196,7 @@ div footer{
   display: flex;
   justify-content: center;
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 14px;
   padding: 1rem;
   width: 100%;
 }

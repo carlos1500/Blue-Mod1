@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, } from "react";
 import "./App.css";
 
 export default function App() {
@@ -49,6 +49,7 @@ export default function App() {
   const [editando, setEditando] = useState(false);
   const [indiceEditando, setIndiceEditando] = useState(null);
 
+
   useEffect(() => {
     if (indiceEditando !== null && editando) {
       setNomeBanda(bandas[indiceEditando].nome);
@@ -95,6 +96,16 @@ export default function App() {
     setBandas(bandas.filter((banda, setId) => setId !== indice));
   };
 
+  const [showForm, setShowForm] = useState(false);
+  const toggle = ()=>{
+    setShowForm(!showForm);
+  }
+  function BotaoForm(){
+    return(
+      <button id="toggle" type="button" onClick={toggle}>{showForm ? 'Finalizar' : 'Sugerir mais bandas'}</button>
+    );
+  }
+
 
 
   return (
@@ -108,8 +119,15 @@ export default function App() {
         após o (longo) período de quarentena imposto pela (incompetencia do
         bolsonaro) pandemia da Covid-19. Cadastre o seu line-up ideal!
       </h>
-      <form onSubmit={handleSubmit}>
-        <label> Cadastre novas bandas </label>
+      <section className="buttonToggle">
+      <div id="buttonToggle">
+        <BotaoForm />
+      </div>
+    </section>
+    {showForm &&(
+      
+        <form>
+        <label> Sugira novas bandas para compor o nosso lineup </label>
         <input
           type="text"
           value={nomeBanda}
@@ -124,6 +142,8 @@ export default function App() {
         />
         <button type="submit">Cadastre</button>
       </form>
+      )}
+      
       <ul>
         {bandas.map((f, indice) => (
           <li key={indice}>
@@ -163,8 +183,12 @@ export default function App() {
         allowfullscreen=""
         loading="lazy"
       ></iframe>
+      <article>
+      
+      </article>
       <br></br>
-      <footer> @cbernardox </footer>
+      <footer> @cbernardox © 2021</footer>
     </div>
   );
 }
+
