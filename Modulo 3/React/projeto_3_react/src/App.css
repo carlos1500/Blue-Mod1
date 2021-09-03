@@ -6,27 +6,9 @@
 *{
   background-color: rgb(12, 11, 11);
   font-family: 'Esteban', serif;
-
-}
-
-.App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 
-
-.App-link {
-  color: #990c02;
-}
-
-
-
-.App-constructor-filmes{
-  display: flex;
-  justify-content: center;
-}
 
 div{
   display: flex;
@@ -46,11 +28,67 @@ div nav img{
 
 div h{
   color: whitesmoke;
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 800;
   padding: 8rem;
   display: flex;
   justify-content: center;
   text-align: center;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  margin: 0 auto; 
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  filter: opacity(60%);
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 
 button#toggle {
@@ -166,7 +204,6 @@ div ul button#delete{
     background-color: rgb(194, 128, 255);
     color: white;
     font-size: 16px;
-
     padding: .3rem;
     margin: 1rem;
     font-family: 'Libre Baskerville', serif;

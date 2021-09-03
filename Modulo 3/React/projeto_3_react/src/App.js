@@ -1,5 +1,7 @@
-import React, { useEffect, useState, } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import ImageSlider from "./ImageSlider";
+import { SliderData, sliderImagem } from "./SliderData";
 
 export default function App() {
   const [bandas, setBandas] = useState([
@@ -49,7 +51,6 @@ export default function App() {
   const [editando, setEditando] = useState(false);
   const [indiceEditando, setIndiceEditando] = useState(null);
 
-
   useEffect(() => {
     if (indiceEditando !== null && editando) {
       setNomeBanda(bandas[indiceEditando].nome);
@@ -97,53 +98,56 @@ export default function App() {
   };
 
   const [showForm, setShowForm] = useState(false);
-  const toggle = ()=>{
+  const toggle = () => {
     setShowForm(!showForm);
-  }
-  function BotaoForm(){
-    return(
-      <button id="toggle" type="button" onClick={toggle}>{showForm ? 'Finalizar' : 'Sugerir mais bandas'}</button>
+  };
+  function BotaoForm() {
+    return (
+      <button id="toggle" type="button" onClick={toggle}>
+        {showForm ? "Finalizar" : "Sugerir mais bandas"}
+      </button>
     );
   }
-
-
 
   return (
     <div>
       <header>
         <img src="../header.png" alt="skater et"></img>
       </header>
+      <section>
+      <ImageSlider slides={SliderData} />
+      </section>
       <h>
         {" "}
         O Pedrada Festival será o primeiro festival de Punk Rock que ocorrerá
         após o (longo) período de quarentena imposto pela (incompetencia do
         bolsonaro) pandemia da Covid-19. Cadastre o seu line-up ideal!
       </h>
+      
+      
       <section className="buttonToggle">
-      <div id="buttonToggle">
-        <BotaoForm />
-      </div>
-    </section>
-    {showForm &&(
-      
+        <div id="buttonToggle">
+          <BotaoForm />
+        </div>
+      </section>
+      {showForm && (
         <form>
-        <label> Sugira novas bandas para compor o nosso lineup </label>
-        <input
-          type="text"
-          value={nomeBanda}
-          placeholder="Nome da Banda"
-          onChange={handleNameChange}
-        />
-        <input
-          type="text"
-          value={imagem}
-          placeholder="URL da imagem"
-          onChange={handleImgChange}
-        />
-        <button type="submit">Cadastre</button>
-      </form>
+          <label> Sugira novas bandas para compor o nosso lineup </label>
+          <input
+            type="text"
+            value={nomeBanda}
+            placeholder="Nome da Banda"
+            onChange={handleNameChange}
+          />
+          <input
+            type="text"
+            value={imagem}
+            placeholder="URL da imagem"
+            onChange={handleImgChange}
+          />
+          <button type="submit">Cadastre</button>
+        </form>
       )}
-      
       <ul>
         {bandas.map((f, indice) => (
           <li key={indice}>
@@ -183,12 +187,9 @@ export default function App() {
         allowfullscreen=""
         loading="lazy"
       ></iframe>
-      <article>
-      
-      </article>
+      <article></article>
       <br></br>
       <footer> @cbernardox © 2021</footer>
     </div>
   );
 }
-
